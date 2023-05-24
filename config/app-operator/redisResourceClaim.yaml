@@ -1,0 +1,11 @@
+apiVersion: services.apps.tanzu.vmware.com/v1alpha1
+kind: ClassClaim
+metadata:
+  name: wfd-cache
+  namespace: wfd-apps
+spec:
+  classRef:
+    name: redis-unmanaged
+  parameters:
+    replicas: 1
+    serviceNamespace: wfd-services

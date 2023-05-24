@@ -1,0 +1,41 @@
+id: 9d56b0ea-4211-4b42-9653-046edf072db1
+timestamp: 2023-05-24T20:39:48Z
+username: ciberkleid
+source: VSCODE
+accelerator:
+  name: where-for-dinner
+  source:
+    image: registry.tanzu.vmware.com/tanzu-application-platform/tap-packages@sha256:fc3a42bd20129095be899ae1e41125f97d2cdd927a755a43c77a1dafe27d45eb
+fragments:
+  - name: build-wrapper-maven
+    source:
+      image: registry.tanzu.vmware.com/tanzu-application-platform/tap-packages@sha256:195a3ca6585fa91c41292584a19c2807c72ecdf986ce860a7147451e89d467d4
+  - name: tap-workload
+    source:
+      image: registry.tanzu.vmware.com/tanzu-application-platform/tap-packages@sha256:dbf0dedb6848ad8a7704c1c19465a1ddae9039b0e63c1dd0df3e2ed9cbda6093
+options:
+  appSSOName: appsso-where-for-dinner
+  appWorkloadURL: https://where-for-dinner.<UPDATE ME>
+  cacheName: wfd-cache
+  cacheType: redisCache
+  dbName: wfd-db
+  dbType: mysql
+  devDefaultAccountPassword: letseat
+  devDefaultAccountUsername: where-for-dinner
+  dynamicCache: true
+  dynamicCacheClass: redis-unmanaged
+  dynamicDBClass: mysql-unmanaged
+  dynamicDatabase: true
+  dynamicMsgBroker: true
+  dynamicMsgBrokerClass: rabbitmq-unmanaged
+  enableCloudEvents: false
+  enableDefaultDevAccount: true
+  enableRabbitMQBroker: false
+  enableSecurity: false
+  includeBuildToolWrapper: true
+  msgBrokerType: rabbitmq
+  msgbrokerName: wfd-msgbroker
+  numRabbitMQClusterNodes: 1
+  projectName: where-for-dinner
+  serviceNamespace: wfd-services
+  workloadNamespace: wfd-apps

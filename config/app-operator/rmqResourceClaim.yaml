@@ -1,0 +1,11 @@
+apiVersion: services.apps.tanzu.vmware.com/v1alpha1
+kind: ClassClaim
+metadata:
+  name: wfd-msgbroker
+  namespace: wfd-apps
+spec:
+  classRef:
+    name: rabbitmq-unmanaged
+  parameters:
+    replicas: 1
+    serviceNamespace: wfd-services
