@@ -113,6 +113,13 @@ where-for-dinner:
       region: MO
       postalCode: 64112
       reservationURL: 'https://www.konagrill.com/reservations'
+    - diningName: Gi-Jin
+      phoneNumber: (412) 332-6939  
+      address: 208 6th Street
+      locality: Pittsburgh
+      region: PA
+      postalCode: 15222
+      reservationURL: 'https://www.opentable.com/restref/client/?restref=1062715'
       
 ---
 
