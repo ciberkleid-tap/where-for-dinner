@@ -29,6 +29,119 @@ spec:
   lifecycle: experimental
   owner: where-for-dinner-team
   system: where-for-dinner
-  definition:
+  # definition:
     # $text: https://where-for-dinner.perfect300rock.com/api/availability/v3/api-docs/
-    $text: https://where-for-dinner-wfd-apps.iterate.tap-demo.coraiberkleid.net/api/availability/v3/api-docs/
+    # $text: https://where-for-dinner-wfd-apps.iterate.tap-demo.coraiberkleid.net/api/availability/v3/api-docs/
+  definition: |
+    openapi: 3.0.1
+    info:
+      title: Where for Dinner Availability Service
+      description: Core Where For Dinner service for retrieving dining availability
+      version: 0.0.1
+    servers:
+      - url: >-
+          https://where-for-dinner-wfd-apps.iterate.tap-demo.coraiberkleid.net/api/availability/
+        description: Generated server url
+    tags:
+      - name: Availability REST API
+        description: Operations for retrieving dining availability
+    paths:
+      /availability:
+        get:
+          tags:
+            - availability-resource
+          summary: Get all availability across all searches
+          description: >-
+            Returns all availability regardless of search name for a given logged on
+            user.  If a logged on user is not present, then a default principal
+            representing non logged on users is applied.
+          operationId: getAllAvailabilty
+          responses:
+            '200':
+              description: >-
+                Returns all availability for a user or an empty list if no
+                availability is found.
+              content:
+                '*/*':
+                  schema:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Availability'
+      /availability/{searchName}:
+        get:
+          tags:
+            - availability-resource
+          summary: Get all availability for a given search name
+          description: >-
+            Returns all availability for a search namd and logged on user.  If a
+            logged on user is not present, then a default principal representing non
+            logged on users is applied.
+          operationId: getSearchAvailabilty
+          parameters:
+            - name: searchName
+              in: path
+              required: true
+              schema:
+                type: string
+          responses:
+            '200':
+              description: >-
+                Returns all availability for a user and search name or an empty list
+                if no availability is found.
+              content:
+                '*/*':
+                  schema:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Availability'
+      /availability/app/version:
+        get:
+          tags:
+            - availability-resource
+          summary: Get app version
+          description: Returns the version of the application
+          operationId: getAvailabilityAppVersion
+          responses:
+            '200':
+              description: Returns the version of the application
+              content:
+                '*/*':
+                  schema:
+                    type: string
+    components:
+      schemas:
+        Availability:
+          type: object
+          properties:
+            searchName:
+              type: string
+            diningName:
+              type: string
+            address:
+              type: string
+            locality:
+              type: string
+            region:
+              type: string
+            postalCode:
+              type: string
+            phoneNumber:
+              type: string
+            reservationURL:
+              type: string
+            requestSubject:
+              type: string
+            availabilityWindows:
+              type: array
+              items:
+                $ref: '#/components/schemas/AvailabilityWindow'
+        AvailabilityWindow:
+          type: object
+          properties:
+            startTime:
+              type: integer
+              format: int64
+            endTime:
+              type: integer
+              format: int64
+
