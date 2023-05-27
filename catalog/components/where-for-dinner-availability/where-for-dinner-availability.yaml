@@ -40,8 +40,9 @@ spec:
       version: 0.0.1
     servers:
       - url: >-
+          http://where-for-dinner-wfd-apps.iterate.tap-demo.coraiberkleid.net/api/availability/
+      - url: >-
           https://where-for-dinner-wfd-apps.iterate.tap-demo.coraiberkleid.net/api/availability/
-        description: Generated server url
     tags:
       - name: Availability REST API
         description: Operations for retrieving dining availability

@@ -41,7 +41,8 @@ spec:
     servers:
       - url: >-
           https://where-for-dinner-wfd-apps.iterate.tap-demo.coraiberkleid.net/api/search/
-        description: Generated server url
+      - url: >-
+          http://where-for-dinner-wfd-apps.iterate.tap-demo.coraiberkleid.net/api/search/
     tags:
       - name: Search Submission REST API
         description: CRUD operations for submiting, retrieving, and deleting searches
