@@ -30,7 +30,7 @@ spec:
       value: "17"
   source:
     git:
-      url: ssh://git@github.com/ciberkleid-tap/where-for-dinner.git
+      url: https://github.com/ciberkleid-tap/where-for-dinner
       ref:
         branch: full-profile 
     subPath: where-for-dinner-api-gateway
