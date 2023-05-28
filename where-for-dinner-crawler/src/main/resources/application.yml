@@ -7,13 +7,6 @@ spring:
 where-for-dinner:
   randomsearcher:
     establishments:
-    - diningName: Gi-Jin
-      phoneNumber: (412) 332-6939  
-      address: 208 6th Street
-      locality: Pittsburgh
-      region: PA
-      postalCode: 15222
-      reservationURL: 'https://www.opentable.com/r/gi-jin-pittsburgh'
     - diningName: Meat & Potatoes
       phoneNumber: (412) 325-7007 
       address: 649 Penn Avenue
@@ -21,13 +14,6 @@ where-for-dinner:
       region: PA
       postalCode: 15222
       reservationURL: 'https://www.opentable.com/r/meat-and-potatoes-pittsburgh'
-    - diningName: Butcher and the Rye
-      phoneNumber: (412) 391-2752 
-      address: 212 6th Street
-      locality: Pittsburgh
-      region: PA
-      postalCode: 15222
-      reservationURL: 'https://www.opentable.com/r/butcher-and-the-rye-pittsburgh'
     - diningName: täkō
       phoneNumber: (412) 471-8256
       address: 214 6th Street
@@ -35,34 +21,13 @@ where-for-dinner:
       region: PA
       postalCode: 15222
       reservationURL: 'https://www.opentable.com/r/tako-pittsburgh'
-    - diningName: Poulet Bleu
-      phoneNumber: (412) 325-7007 
-      address: 3519 Butler Street
-      locality: Pittsburgh
-      region: PA
-      postalCode: 15201
-      reservationURL: 'https://www.opentable.com/r/poulet-bleu-pittsburgh'
-    - diningName: Fish nor Fowl
-      phoneNumber: (412) 460-4644
-      address: 5523 Penn Ave
-      locality: Pittsburgh
-      region: PA
-      postalCode: 15206
-      reservationURL: 'https://www.opentable.com/r/fish-nor-fowl-pittsburgh'
-    - diningName: Coop De Ville
-      phoneNumber: (412) 991-2667
-      address: 2305 Smallman Street
+    - diningName: Gi-Jin
+      phoneNumber: (412) 332-6939  
+      address: 208 6th Street
       locality: Pittsburgh
       region: PA
       postalCode: 15222
-      reservationURL: 'https://www.toasttab.com/coop-deville'
-    - diningName: täkō tôrtä
-      phoneNumber: (412) 866-8256
-      address: 122 Bakery Square Boulevard
-      locality: Pittsburgh
-      region: PA
-      postalCode: 15206
-      reservationURL: 'https://www.toasttab.com/tako-bakery-square-122-bakery-square-blvd'
+      reservationURL: 'https://www.opentable.com/r/gi-jin-pittsburgh'
     - diningName: Rib Room
       phoneNumber: (412) 991-7900
       address: 649 Penn Avenue
@@ -70,6 +35,13 @@ where-for-dinner:
       region: PA
       postalCode: 15222
       reservationURL: 'https://www.opentable.com/r/rib-room-pittsburgh'
+    - diningName: Fish nor Fowl
+      phoneNumber: (412) 460-4644
+      address: 5523 Penn Ave
+      locality: Pittsburgh
+      region: PA
+      postalCode: 15206
+      reservationURL: 'https://www.opentable.com/r/fish-nor-fowl-pittsburgh'
     - diningName: Sally Ann's
       phoneNumber: (412) 338-1876
       address: 136 6th Street
@@ -77,3 +49,31 @@ where-for-dinner:
       region: PA
       postalCode: 15222
       reservationURL: 'https://resy.com/cities/pit/sally-anns'
+    # - diningName: Butcher and the Rye
+    #   phoneNumber: (412) 391-2752 
+    #   address: 212 6th Street
+    #   locality: Pittsburgh
+    #   region: PA
+    #   postalCode: 15222
+    #   reservationURL: 'https://www.opentable.com/r/butcher-and-the-rye-pittsburgh'
+    # - diningName: Coop De Ville
+    #   phoneNumber: (412) 991-2667
+    #   address: 2305 Smallman Street
+    #   locality: Pittsburgh
+    #   region: PA
+    #   postalCode: 15222
+    #   reservationURL: 'https://www.toasttab.com/coop-deville'
+    # - diningName: täkō tôrtä
+    #   phoneNumber: (412) 866-8256
+    #   address: 122 Bakery Square Boulevard
+    #   locality: Pittsburgh
+    #   region: PA
+    #   postalCode: 15206
+    #   reservationURL: 'https://www.toasttab.com/tako-bakery-square-122-bakery-square-blvd'
+    # - diningName: Poulet Bleu
+    #   phoneNumber: (412) 325-7007 
+    #   address: 3519 Butler Street
+    #   locality: Pittsburgh
+    #   region: PA
+    #   postalCode: 15201
+    #   reservationURL: 'https://www.opentable.com/r/poulet-bleu-pittsburgh'
