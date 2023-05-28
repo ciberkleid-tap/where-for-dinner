@@ -80,7 +80,7 @@ spec:
       value: "17"
   source:
     git:
-      url: ssh://git@github.com/ciberkleid-tap/where-for-dinner.git
+      url: https://github.com/ciberkleid-tap/where-for-dinner
       ref:
         branch: full-profile
     subPath: where-for-dinner-search
@@ -130,7 +130,7 @@ spec:
       cpu: 1500m
   source:
     git:
-      url: ssh://git@github.com/ciberkleid-tap/where-for-dinner.git
+      url: https://github.com/ciberkleid-tap/where-for-dinner
       ref:
         branch: full-profile 
     subPath: where-for-dinner-search-proc
@@ -175,7 +175,7 @@ spec:
       cpu: 1500m
   source:
     git:
-      url: ssh://git@github.com/ciberkleid-tap/where-for-dinner.git
+      url: https://github.com/ciberkleid-tap/where-for-dinner
       ref:
         branch: full-profile 
     subPath: where-for-dinner-notify
@@ -225,7 +225,7 @@ spec:
       cpu: "1.5"
   source:
     git:
-      url: ssh://git@github.com/ciberkleid-tap/where-for-dinner.git
+      url: https://github.com/ciberkleid-tap/where-for-dinner
       ref:
         branch: full-profile 
     subPath: where-for-dinner-availability
@@ -263,7 +263,7 @@ spec:
       cpu: 1500m
   source:
     git:
-      url: ssh://git@github.com/ciberkleid-tap/where-for-dinner.git
+      url: https://github.com/ciberkleid-tap/where-for-dinner
       ref:
         branch: full-profile 
     subPath: where-for-dinner-ui
@@ -299,7 +299,7 @@ spec:
       value: "17"
   source:
     git:
-      url: ssh://git@github.com/ciberkleid-tap/where-for-dinner.git
+      url: https://github.com/ciberkleid-tap/where-for-dinner
       ref:
         branch: full-profile 
     subPath: where-for-dinner-crawler
