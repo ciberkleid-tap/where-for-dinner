@@ -31,7 +31,7 @@ spec:
   system: where-for-dinner
   # definition:
     # $text: https://where-for-dinner.perfect300rock.com/api/search/v3/api-docs/
-    # $text: https://where-for-dinner-wfd-apps.iterate.tap-demo.coraiberkleid.net/api/search/v3/api-docs/
+    # $text: https://where-for-dinner-wfd-apps.full.tap-demo.coraiberkleid.net/api/search/v3/api-docs/
   definition: |
     openapi: 3.0.1
     info:
@@ -40,9 +40,9 @@ spec:
       version: 0.0.1
     servers:
       - url: >-
-          https://where-for-dinner-wfd-apps.iterate.tap-demo.coraiberkleid.net/api/search/
+          https://where-for-dinner-wfd-apps.full.tap-demo.coraiberkleid.net/api/search/
       - url: >-
-          http://where-for-dinner-wfd-apps.iterate.tap-demo.coraiberkleid.net/api/search/
+          http://where-for-dinner-wfd-apps.full.tap-demo.coraiberkleid.net/api/search/
     tags:
       - name: Search Submission REST API
         description: CRUD operations for submiting, retrieving, and deleting searches
